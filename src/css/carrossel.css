@@ -1,0 +1,75 @@
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-container {
+    width: 100%;
+    max-width: 1920px;
+    border: 2px solid var(--silver);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-default);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+}
+
+.carrossel-container button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrossel-container button.prev {
+    left: 10px;
+}
+
+.carrossel-container button.next {
+    right: 10px;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.carrossel img {
+    width: 100%;
+}
+
+.dots {
+    position: absolute;
+    bottom: 5px;
+    color: var(--white-default);
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
+
+.dots li.active {
+    width: 20px;
+    background-color: var(--black);
+}
