@@ -1,0 +1,64 @@
+#filmes-recomendados>h2.titulo {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#filmes-recomendados figure {
+    background-color: var(--silver-filmCard);
+    width: 100%;
+    height: 600px;
+    max-width: 400px;
+    padding: 15px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#filmes-recomendados .foto-produto {
+    height: 95%;
+    width: 100%;
+    max-height: 380px;
+    max-width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#filmes-recomendados figcaption {
+    padding: 0 10%;
+    display: flex;
+    flex-grow: 1; /*Usar todo espaço disponivel*/
+    flex-direction: column;
+}
+
+#filmes-recomendados figcaption h4 {
+    height: 55px;
+    margin-top: 5px;
+    /* margin-bottom: 0; */
+    font-weight: 900;
+    text-align: start;
+    overflow: hidden;
+}
+
+#filmes-recomendados span.preco {
+    color: var(--purple-preco);
+    font-weight: 700;
+    text-align: end;
+}
+
+#filmes-recomendados figcaption p {
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Definir linhas de que vai exibir (propriedade está em desuso)*/
+    -webkit-box-orient: vertical; /* Definir a box em vertical*/
+    overflow: hidden; /* Esconder o resto do texto*/
+    text-overflow: ellipsis; /* Os 3 pontinhos no final */
+}
+
+#filmes-recomendados span.genero>label {
+    color: var(--white);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
