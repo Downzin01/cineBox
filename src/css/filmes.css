@@ -1,4 +1,4 @@
-#filmes-recomendados>h2.titulo {
+#filmes-recomendados > h2.titulo {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
@@ -56,9 +56,8 @@
     text-overflow: ellipsis; /* Os 3 pontinhos no final */
 }
 
-#filmes-recomendados span.genero>label {
+#filmes-recomendados span.genero > label {
     color: var(--white);
     padding: 1px 5px;
     border-radius: 5px;
 }
-
