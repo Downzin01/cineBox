@@ -502,6 +502,17 @@ VALUES (
         99,
         'Bairro Virtual',
         'Cidade Matrix'
+    ),
+    (
+        'admin',
+        2003,
+        '',
+        '',
+        '',
+        '',
+        99,
+        '',
+        ''
     );
 
 -- Inserindo dados fictícios na tabela tb_usuario (associando personagens aos usuários)
@@ -523,4 +534,13 @@ VALUES ('harry_potter', 'senha123', 1),
         'arqueologia123',
         4
     ),
-    ('trinity_matrix', 'neo123', 5);
+    (
+        'trinity_matrix', 
+        'neo123', 
+        5
+    ),
+    (
+        'admin',
+        'admin',
+        6
+    );
