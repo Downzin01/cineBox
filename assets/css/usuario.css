@@ -38,9 +38,11 @@
     padding: 10px;
     height: 200px;
 }
+
 .desc-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
+

@@ -1,4 +1,5 @@
 <?php
+    require './classes/Filmes.php';
     include './includes/header.php';    
 
     if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
@@ -9,6 +10,9 @@
     if (!isset($_SESSION['id']) && empty($_SESSION)) {
         header('Location: ./usuario-login.php');
     }
+
+    $filme = new Filmes();
+    $dadosFilmes = $filme->exibirListaFilmes();
 ?>
 
 <section id="usuario-principal">
