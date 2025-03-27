@@ -20,7 +20,7 @@
             </div>
             <div class="col-10 col-lg-10 col-xs-12">
                 <?php $qntd = 4;
-                include './includes/filmes_listar.php'; ?>
+                include './includes/filme_lista.php'; ?>
             </div>
         </div>
     </main>

@@ -1,11 +1,15 @@
 <?php
+require './classes/Filmes.php';
+require './classes/Generos.php';
+
 $titulo = '';
 include './includes/header.php';
 
-require './classes/Filmes.php';
+$filme = new Filmes();
+$dadosFilmes = $filme->exibirListaFilmes();
 
-$filmes = new Filmes();
-$dadosFilmes = $filmes->exibirListaFilmes();
+$genero = new Generos();
+$dadosGeneros = $genero->consultarListaGeneros();
 
-include './includes/filme_lista.php';
+include './includes/filmes_filtro.php';
 include './includes/footer.php';
