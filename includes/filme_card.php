@@ -1,5 +1,5 @@
 <div class="col-lg-<?= isset($qntd) ? $qntd : 3 ?> col-md-6 col-sm-12">
-    <a href="filmes-consultar.php?id=<?= $value['id'] ?>">
+    <a href="filmes-consultar.php?id=<?= $value['id'] ?>" style="text-decoration: none; color: inherit;">
         <figure>
             <img src="./assets/img/poster/<?= $value['poster'] ?>" alt="Poster <?= $value['nome'] ?>" class="foto-produto">
             <figcaption>

@@ -9,6 +9,7 @@
 
             $this->conexaoBanco = new PDO($dsn, $user, $password);
         }
+
         public function exibirListaFilmes($limite = '') {
             
 
@@ -22,7 +23,6 @@
 
             return $this->conexaoBanco->query($scriptSQL)->fetchAll();
         }
-
 
 
         public function consultarFilmeByIdFilme($id_filme) {

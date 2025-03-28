@@ -11,10 +11,11 @@
         
         $dados = $filmes->consultarFilmeByIdFilme($_GET['id']);
         $dadosGeneros = $generos->consultarGeneroByIdFilme($_GET['id']);
-        
+
         include './includes/filme_detalhe.php';
     } else {
         header('location:index.php');
     }
 
     include './includes/footer.php';
+?>
